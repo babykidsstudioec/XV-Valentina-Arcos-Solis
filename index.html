@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10254a">
+  <meta name="description" content="Valentina Arcos Solís celebra sus XV años el 30 de enero de 2027. Una noche de cuento de hadas en Mall del Sol, Salón Turquesa II.">
+  <title>Valentina Arcos Solís | Mis XV años · BabyKids Studio Fotográfico</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BabyKids Studio Fotográfico">
+  <meta property="og:title" content="Valentina Arcos Solís · Mis XV años">
+  <meta property="og:description" content="Había una vez... una noche de cuento. Sábado 30 de enero de 2027 · 20:00 · Salón Turquesa II.">
+  <meta property="og:image" content="assets/img/preview-whatsapp.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>if('scrollRestoration' in history)history.scrollRestoration='manual';</script>
+  <script defer src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- ENTRADA: sobre tridimensional, centrado también en móvil -->
+  <div class="gate" id="gate" role="region" aria-label="Sobre mágico de invitación de quince años">
+    <div class="gate-aurora" aria-hidden="true"></div>
+    <div class="gate-stars" id="gate-stars" aria-hidden="true"></div>
+    <div class="gate-wrap">
+      <p class="studio-label">BABYKIDS <span>STUDIO FOTOGRÁFICO</span></p>
+      <div class="ornate-divider" aria-hidden="true"><i></i> ✧ <i></i></div>
+      <p class="gate-intro">Una noche llena de encanto se aproxima</p>
+      <h1 class="gate-heading">Un cuento de <em>hadas</em></h1>
+      <p class="gate-description">Un pequeño sobre guarda una gran ilusión</p>
+      <div class="envelope-stage" id="envelope-stage">
+        <div class="envelope-glow" aria-hidden="true"></div>
+        <div class="envelope-shell" id="envelope-shell">
+          <div class="env-rear"></div>
+          <div class="env-letter" aria-hidden="true"><span>UN SUEÑO POR VIVIR</span><strong>Valentina</strong><small>CON AMOR, PARA TI</small></div>
+          <div class="env-wing env-wing-left"></div>
+          <div class="env-wing env-wing-right"></div>
+          <div class="env-pocket"></div>
+          <div class="env-flap"></div>
+          <button class="env-seal" id="open-seal" type="button" aria-label="Abrir la invitación tocando la letra V" title="Toca la V para abrir"><span>V</span></button>
+        </div>
+        <!-- Carta visual separada de las solapas: al abrir, sale POR FUERA y POR DELANTE del sobre. -->
+        <div class="env-letter-flyout" aria-hidden="true">
+          <span class="flyout-top">✧ &nbsp; UN SUEÑO POR VIVIR &nbsp; ✧</span>
+          <strong>Valentina</strong>
+          <small>CON AMOR, PARA TI</small>
+          <i class="flyout-flourish" aria-hidden="true">♡ &nbsp; ✧ &nbsp; ♡</i>
+        </div>
+        <div class="envelope-arc" aria-hidden="true"></div>
+      </div>
+      <button id="open-envelope" class="open-cta" type="button"><span class="button-star">✧</span> TOCA LA V PARA ABRIR TU INVITACIÓN <span class="button-star">✧</span></button>
+      <p class="gate-signature">La magia comienza con una invitación...</p>
+    </div>
+  </div>
+
+  <div class="floating-sparkles" id="floating-sparkles" aria-hidden="true"></div>
+  <button class="music-fab" id="music-toggle" aria-label="Activar música" aria-pressed="false"><span class="music-icon">♫</span><span id="music-text">Música</span></button>
+  <audio id="music" loop preload="none" src="assets/audio/vals-cuento-de-hadas-original.mp3"></audio>
+
+  <!-- INTERIOR: portada física 3D con capas, sombra y movimiento táctil -->
+  <main class="main" id="main">
+    <div class="main-bg-stars" aria-hidden="true"></div>
+    <header class="topline"><span>♕ BABYKIDS STUDIO FOTOGRÁFICO</span><span>VALENTINA · MIS XV AÑOS ✧</span></header>
+    <div class="storybook-scene">
+      <section class="storybook" id="storybook" aria-label="Invitación tridimensional">
+        <div class="book-front-frame"></div>
+        <div class="book-depth depth-one"></div>
+        <div class="book-depth depth-two"></div>
+        <div class="book-content">
+          <div class="book-corners" aria-hidden="true"><b>♡</b><b>♡</b><b>♡</b><b>♡</b></div>
+          <div class="small-stars">✦ &nbsp; ✧ &nbsp; ✦</div>
+          <p class="story-overline">CON MUCHA ALEGRÍA TE INVITO A CELEBRAR</p>
+          <p class="story-script">Mis</p>
+          <div class="fifteen"><span>XV</span></div>
+          <p class="years">A Ñ O S</p>
+          <div class="crystal-line"><i></i> ❖ <i></i></div>
+          <h2 class="quince-name" id="name-heading">Valentina</h2>
+          <p class="storybook-surname">ARCOS SOLÍS</p>
+          <p class="story-quote">«Los sueños más bonitos se hacen realidad cuando los compartimos»</p>
+          <div class="carriage-scene magical-carriage" aria-label="Carroza de cristal de cuento de hadas">
+            <div class="carriage-halo" aria-hidden="true"></div>
+            <img src="assets/img/carroza-cristal-3d.webp" alt="Carroza de cristal realista azul y dorada" class="carriage-art" width="1200" height="1200" fetchpriority="high">
+            <span class="crystal-glimmer sparkle-one" aria-hidden="true">✧</span><span class="crystal-glimmer sparkle-two" aria-hidden="true">✦</span>
+          </div>
+          <div class="bottom-ribbon">UNA NOCHE PARA RECORDAR POR SIEMPRE</div>
+        </div>
+      </section>
+      <p class="interaction-hint" aria-hidden="true">✧ Inclina suavemente la tarjeta para descubrir su brillo ✧</p>
+    </div>
+
+
+    <!-- Fotografía de referencia del material entregado por el organizador -->
+    <section class="portrait-chapter reveal" aria-label="Presentación de Valentina">
+      <div class="portrait-snow" aria-hidden="true"></div>
+      <p class="portrait-intro">Había una vez...</p>
+      <span class="portrait-overline">MIS XV AÑOS</span>
+      <h2 id="portrait-name">Valentina</h2>
+      <p id="portrait-surname" class="portrait-surname">ARCOS SOLÍS</p>
+      <img class="portrait-photo" src="assets/img/escena-valentina.jpg" alt="Joven con vestido celeste frente a un castillo de cuento de hadas" loading="lazy">
+      <p class="portrait-quote" id="message">Te invito a vivir conmigo una noche de cuento.</p>
+      <p class="portrait-date">✧ &nbsp; 30 · 01 · 2027 &nbsp; ✧</p>
+    </section>
+
+    <section class="section-light countdown-light reveal" aria-labelledby="clock-title">
+      <div class="glass-shoe-stage premium-object-stage" id="shoe-countdown-stage" aria-label="Zapatilla de cristal tridimensional">
+        <span class="luxury-halo" aria-hidden="true"></span>
+        <span class="shoe-motion"><img class="shoe-art luxury-object" src="assets/img/zapatilla-cuenta-3d.webp" alt="Zapatilla de cristal realista con reflejos y piedras preciosas" width="1200" height="1200" loading="lazy"></span>
+        <span class="object-twinkle twinkle-a" aria-hidden="true">✦</span><span class="object-twinkle twinkle-b" aria-hidden="true">✧</span>
+      </div>
+      <p class="light-eyebrow">LA CUENTA REGRESIVA</p>
+      <h2 id="clock-title" class="light-script">Faltan</h2>
+      <div class="countdown-grid" role="timer" aria-label="Tiempo para la fiesta">
+        <div><strong id="days">00</strong><small>DÍAS</small></div>
+        <div><strong id="hours">00</strong><small>HORAS</small></div>
+        <div><strong id="minutes">00</strong><small>MINUTOS</small></div>
+        <div><strong id="seconds">00</strong><small>SEGUNDOS</small></div>
+      </div>
+      <div class="flourish" aria-hidden="true">────── ❈ ──────</div>
+      <p id="countdown-date" class="date-line">SÁBADO 30 DE ENERO, 2027</p>
+      <p id="countdown-message" class="serif-note">Como en todo cuento, cada segundo cuenta... hasta la gran noche.</p>
+    </section>
+
+    <section class="section-light location-section reveal" aria-labelledby="venue-title">
+      <p class="light-eyebrow">LA GRAN NOCHE</p>
+      <h2 id="venue-title" class="light-script">Lugar &amp; Hora</h2>
+      <div class="flourish" aria-hidden="true">────── ❈ ──────</div>
+      <div class="glass-card venue-card">
+        <div class="venue-date"><span>SÁBADO</span><strong>30</strong><span>DE ENERO</span></div>
+        <p class="venue-year">— DEL 2027 —</p>
+        <p class="light-eyebrow">RECEPCIÓN</p>
+        <div class="venue-time">◷ <span id="event-time">20:00</span></div>
+        <p class="venue-place" id="place-name">Mall del Sol</p>
+        <p class="venue-salon" id="venue-salon">SALÓN TURQUESA II</p>
+        <p class="venue-instructions" id="venue-instructions">ⓘ &nbsp; Subir por los estacionamientos del restaurante Portela.</p>
+        <div class="map-preview" aria-label="Ilustración de ubicación aproximada del centro comercial">
+          <div class="map-lines" aria-hidden="true"></div>
+          <span class="map-pin" aria-hidden="true">♕</span>
+          <span class="map-text">MALL DEL SOL<br><small>Guayaquil, Ecuador</small></span>
+          <small class="map-disclaimer">Ilustración de referencia; abre el mapa para navegar</small>
+        </div>
+        <a class="lux-button filled venue-map" id="map-link" href="https://www.google.com/maps/search/?api=1&query=Mall+del+Sol+Guayaquil+Ecuador" target="_blank" rel="noopener noreferrer">⌖ &nbsp; VER UBICACIÓN &nbsp; ↗</a>
+      </div>
+      <div class="venue-coach-stage premium-object-stage" id="venue-coach-stage">
+        <span class="luxury-halo" aria-hidden="true"></span>
+        <span class="coach-motion"><img class="carriage-display luxury-object" src="assets/img/carroza-cristal-3d.webp" alt="La misma carroza encantada de cristal azul y dorado que aparece al inicio" width="1200" height="1200" loading="lazy"></span>
+        <span class="object-twinkle twinkle-a" aria-hidden="true">✧</span><span class="object-twinkle twinkle-b" aria-hidden="true">✦</span>
+      </div>
+    </section>
+
+    <!-- Itinerario animado con apariciones al hacer scroll -->
+    <section class="section-blue itinerary-section reveal" aria-labelledby="itinerary-title">
+      <p class="light-eyebrow">UNA NOCHE INOLVIDABLE</p>
+      <h2 id="itinerary-title" class="light-script">Itinerario</h2>
+      <div class="flourish" aria-hidden="true">────── ❈ ──────</div>
+      <p class="serif-note">Así viviremos la celebración de los XV años de Valentina.</p>
+      <ol class="timeline" id="timeline" aria-label="Programa animado de la celebración">
+        <li class="timeline-item"><span class="timeline-time">20:00</span><span class="timeline-node"></span><div><h3>Recepción de invitados</h3><p>Bienvenida en el Salón Turquesa II.</p></div></li>
+        <li class="timeline-item"><span class="timeline-time">20:30</span><span class="timeline-node"></span><div><h3>Entrada de la quinceañera</h3><p>El momento más esperado de la noche.</p></div></li>
+        <li class="timeline-item"><span class="timeline-time">21:00</span><span class="timeline-node"></span><div><h3>Vals &amp; brindis</h3><p>Acompáñanos a brindar por Valentina.</p></div></li>
+        <li class="timeline-item"><span class="timeline-time">21:30</span><span class="timeline-node"></span><div><h3>Cena</h3><p>Un momento especial para compartir.</p></div></li>
+        <li class="timeline-item"><span class="timeline-time">22:30 a 02:00</span><span class="timeline-node"></span><div><h3>¡A bailar!</h3><p>La pista queda abierta para todos.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section-light attire-section reveal" aria-labelledby="dress-title">
+      <p class="light-eyebrow">SUGERENCIA DE</p>
+      <h2 id="dress-title" class="light-script">Código de Vestimenta</h2>
+      <p class="attire-tag">FORMAL</p>
+      <div class="flourish" aria-hidden="true">────── ❈ ──────</div>
+      <p class="serif-note">Tu presencia hace aún más especial este día, por eso te pedimos vestir de manera formal.</p>
+      <div class="dress-stage premium-object-stage" id="dress-stage">
+        <span class="dress-floor" aria-hidden="true"></span>
+        <div class="dress-motion"><img class="dress-illustration luxury-object" src="assets/img/vestimenta-real-3d.webp" alt="Cinco personas realistas con vestimenta formal; la quinceañera viste de celeste y los invitados de otros colores" width="1200" height="960" loading="lazy"></div>
+        <span class="object-twinkle twinkle-a" aria-hidden="true">✧</span><span class="object-twinkle twinkle-b" aria-hidden="true">✦</span>
+      </div>
+      <div class="attire-columns">
+        <div><strong>MUJERES</strong><p>Vestido largo o cóctel<br><small>(cualquier color)</small></p></div>
+        <div><strong>QUINCEAÑERA</strong><p class="special">Vestido color celeste</p></div>
+        <div><strong>HOMBRES</strong><p>Traje formal<br><small>(cualquier color)</small></p></div>
+      </div>
+      <p class="serif-note thanks">¡Gracias por ser parte de este momento tan especial!</p>
+      <div class="color-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="selected"></i><i></i><i></i><i></i><i></i></div>
+      <p class="reserved">El color celeste queda reservado para la quinceañera.</p>
+    </section>
+
+    <section class="section-blue gifts-section reveal" aria-labelledby="gift-title">
+      <p class="light-eyebrow">REGALOS</p>
+      <h2 id="gift-title" class="light-script">Lluvia de Sobres</h2>
+      <div class="flourish" aria-hidden="true">────── ❈ ──────</div>
+      <div class="envelopes-float premium-object-stage" id="gift-rain-stage" aria-label="Lluvia de sobres tridimensional animada">
+        <span class="gift-glow" aria-hidden="true"></span>
+        <div class="gift-rain-layer" id="gift-rain-layer" aria-hidden="true"></div>
+        <div class="gift-main-float"><img class="gift-real-art luxury-object" src="assets/img/lluvia-sobres-3d.webp" alt="Sobres reales azul cristal y blanco con corazones de joyería" width="1200" height="1200" loading="lazy"></div>
+        <span class="object-twinkle twinkle-a" aria-hidden="true">✦</span><span class="object-twinkle twinkle-b" aria-hidden="true">✧</span>
+      </div>
+      <p class="serif-note">Tu presencia es el mejor regalo. Si deseas tener un detalle con Valentina, puedes hacerlo en sobre cerrado la noche del evento.</p>
+    </section>
+
+    <section class="section-light rsvp-section reveal" id="confirmar" aria-labelledby="rsvp-title">
+      <p class="light-eyebrow">CONFIRMAR</p>
+      <h2 id="rsvp-title" class="light-script">Confirma tu asistencia</h2>
+      <div class="flourish" aria-hidden="true">────── ❈ ──────</div>
+      <p class="serif-note">Por favor confirma antes del <strong>1 de diciembre de 2026.</strong></p>
+      <div class="crystal-form mirror-rsvp crystal-image-mirror" aria-label="Espejo de cristal con formulario de confirmación">
+        
+        <p class="rsvp-intro">¿Nos acompañas a celebrar los XV años de Valentina?</p>
+        <p id="rsvp-cupo" class="cupo-label">Hemos reservado 1 cupo en su honor.</p>
+        <div id="demo-notice" class="demo-notice">MODO DEMOSTRACIÓN: el formulario todavía no guarda respuestas en Google Sheets. Para activarlo, configura una hoja exclusiva para este evento.</div>
+        <form id="rsvp-form" autocomplete="on" novalidate>
+          <div class="form-group"><label for="guest-name">NOMBRE Y APELLIDO</label><input id="guest-name" name="guestName" autocomplete="name" placeholder="Tu nombre completo" maxlength="90" required></div>
+          <div class="form-group"><label for="attendance">ASISTENCIA</label><select id="attendance" name="attendance" required><option value="">Selecciona una opción</option><option value="si">Sí, asistiré</option><option value="no">No podré asistir</option></select></div>
+          <div class="form-group" id="count-field" hidden><label for="guest-count">NÚMERO DE ASISTENTES</label><select id="guest-count" name="guestCount"></select><small id="count-note">Solo los cupos indicados para esta invitación.</small></div>
+          <div class="form-group"><label for="note">MENSAJE PARA VALENTINA <span class="optional">(OPCIONAL)</span></label><textarea id="note" maxlength="220" rows="3" placeholder="Escribe unas palabras para Valentina..."></textarea></div>
+          <button type="submit" class="lux-button filled" id="send-rsvp">✧ &nbsp; PROBAR RESPUESTA EN EL ESPEJO &nbsp; ✧</button>
+          <p id="form-feedback" class="feedback" role="status" aria-live="polite"></p>
+        </form>
+        <div id="rsvp-result" class="rsvp-result" hidden tabindex="-1"><span class="result-star">✧</span><h3 id="result-heading">¡Muchas gracias!</h3><p id="result-copy"></p></div>
+        <p class="form-privacy">Los datos de confirmación serán utilizados únicamente para organizar esta celebración.</p>
+      </div>
+    </section>
+
+    <footer class="xv-footer">
+      <div class="final-shoe-stage premium-object-stage" id="final-shoe-stage">
+        <span class="luxury-halo" aria-hidden="true"></span>
+        <span class="final-shoe-motion"><img class="final-shoe-image luxury-object" src="assets/img/zapatilla-final-3d.webp" alt="Zapatilla final de cristal facetado con diamantes y brillos realistas" width="1200" height="1200" loading="lazy"></span>
+        <span class="object-twinkle twinkle-a" aria-hidden="true">✧</span><span class="object-twinkle twinkle-b" aria-hidden="true">✦</span>
+      </div>
+      <p>Te espero para vivir juntos una noche de cuento.</p>
+      <strong>Valentina</strong><small>MIS XV · 2027</small>
+      <span>UNA CREACIÓN DE BABYKIDS STUDIO FOTOGRÁFICO</span>
+    </footer>
+  </main>
+</body>
+</html>

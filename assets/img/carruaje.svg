@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 550" role="img" aria-label="Carruaje encantado de cristal bajo un cielo estrellado">
+<defs>
+ <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff9db"/><stop offset=".33" stop-color="#cba665"/><stop offset=".63" stop-color="#fff0ba"/><stop offset="1" stop-color="#a97837"/></linearGradient>
+ <radialGradient id="coach" cx=".42" cy=".28" r=".95"><stop stop-color="#e9f8ff"/><stop offset=".24" stop-color="#a8cbe7"/><stop offset=".55" stop-color="#6f9dc1"/><stop offset=".93" stop-color="#36587e"/></radialGradient>
+ <radialGradient id="glow"><stop stop-color="#d5edff" stop-opacity=".67"/><stop offset="1" stop-color="#5f98d6" stop-opacity="0"/></radialGradient>
+ <filter id="shine"><feGaussianBlur stdDeviation="11"/></filter>
+ <filter id="shadow"><feDropShadow dx="0" dy="11" stdDeviation="9" flood-color="#020e2e" flood-opacity=".63"/></filter>
+</defs>
+<ellipse cx="414" cy="265" rx="310" ry="217" fill="url(#glow)"/>
+<g fill="#fff9e8" opacity=".9"><path d="M106 109l5 15 15 5-15 5-5 15-5-15-15-5 15-5z"/><path d="M716 101l3 11 12 3-12 3-3 12-3-12-12-3 12-3z"/><path d="M642 39l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/><path d="M743 336l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/><circle cx="183" cy="44" r="3"/><circle cx="780" cy="180" r="3"/><circle cx="67" cy="280" r="3"/><circle cx="585" cy="75" r="3"/></g>
+<path d="M70 458Q410 493 781 459" stroke="#95b9d1" stroke-opacity=".32" stroke-width="7" fill="none"/>
+<g filter="url(#shadow)">
+ <path d="M157 364q-32 15-54 44M590 363q38 13 79 39M633 405h123" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+ <path d="M205 322Q211 212 298 165Q405 90 506 170Q593 221 583 330Q577 403 415 411Q243 403 205 322Z" fill="url(#coach)" stroke="url(#gold)" stroke-width="10"/>
+ <path d="M236 322Q250 201 338 172Q409 145 483 174Q561 212 557 323Q523 373 404 380Q282 370 236 322Z" fill="none" stroke="#ecf6ff" stroke-width="5" opacity=".46"/>
+ <path d="M349 157Q349 139 379 137Q410 92 446 137Q479 139 479 159Z" fill="#ecf4ff" stroke="url(#gold)" stroke-width="7"/>
+ <path d="M403 113L408 84 414 112 430 97 425 126h-40l-4-28Z" fill="url(#gold)"/>
+ <path d="M323 218Q323 181 368 185Q409 189 410 223V331H315Z" fill="#122d5a" stroke="url(#gold)" stroke-width="7"/>
+ <path d="M415 222Q414 182 456 185Q502 181 502 218V331H414Z" fill="#15345e" stroke="url(#gold)" stroke-width="7"/>
+ <path d="M336 229Q344 205 374 201V320h-45Z" fill="#add4f0" opacity=".42"/>
+ <path d="M429 202Q470 205 488 234V316h-59Z" fill="#add4f0" opacity=".33"/>
+ <path d="M408 186V336" stroke="url(#gold)" stroke-width="8"/>
+ <path d="M284 336Q406 388 526 336" fill="none" stroke="url(#gold)" stroke-width="9"/>
+ <path d="M291 385Q412 411 521 385" stroke="#f2dd9e" stroke-width="7" fill="none"/>
+ <g stroke="url(#gold)" stroke-width="8" fill="#183c69"><circle cx="283" cy="399" r="55"/><circle cx="524" cy="399" r="55"/></g>
+ <g stroke="url(#gold)" stroke-width="5"><circle cx="283" cy="399" r="34" fill="none"/><circle cx="524" cy="399" r="34" fill="none"/><path d="M283 346v106M230 399h106M246 363l74 74M320 362l-74 74M524 346v106M471 399h106M487 363l74 74M561 362l-74 74"/></g>
+ <circle cx="283" cy="399" r="9" fill="url(#gold)"/><circle cx="524" cy="399" r="9" fill="url(#gold)"/>
+ <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round"><path d="M301 147q-46 3-50 50M519 153q45 19 47 54"/><path d="M222 291q-38 54-4 85M564 283q37 60 10 89"/></g>
+</g>
+<g fill="#f8e7b8"><path d="M643 238l7 17 18 6-18 6-7 17-6-17-18-6 18-6z"/><path d="M155 228l5 14 14 5-14 5-5 14-5-14-14-5 14-5z"/><path d="M626 382l4 11 11 4-11 4-4 11-4-11-11-4 11-4z"/></g>
+</svg>
