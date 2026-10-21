@@ -552,3 +552,123 @@
     padding: 0 8px;
   }
 }
+
+
+/* BABYKIDS XV VALENTINA — Actualización para celulares: botón dorado más compacto. */
+@media (max-width:680px) {
+  .gate .open-cta {
+    width:min(82vw,270px);
+    max-width:calc(100vw - 48px);
+    min-height:38px;
+    padding:7px 8px;
+    font-size:8px;
+    line-height:1.25;
+    letter-spacing:.03em;
+    border-radius:999px;
+  }
+  .gate .open-cta .button-star {
+    font-size:10px;
+    margin:0 1px;
+  }
+}
+
+/* Nueva imagen del Mall del Sol. Se conserva el mapa ilustrado como respaldo
+   hasta que se cargue el archivo ubicacion-mall-sol.jpg. */
+.map-preview.map-photo {
+  position:relative;
+  display:block;
+  height:auto;
+  min-height:230px;
+  aspect-ratio:1536 / 1317;
+  padding:0;
+  overflow:hidden;
+  border:1px solid #d4e1ed;
+  border-radius:16px;
+  text-decoration:none;
+  background:#e4edf7;
+}
+.map-preview.map-photo .map-image {
+  position:absolute;
+  inset:0;
+  z-index:3;
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.map-preview.map-photo .map-image[hidden]{display:none!important}
+@media (max-width:680px) {
+  .map-preview.map-photo {
+    height:auto;
+    margin:22px auto;
+    min-height:0;
+  }
+}
+
+/* Código de vestimenta: títulos legibles y celeste destacado. */
+.attire-section .attire-columns > div {min-width:0}
+.attire-section .attire-columns strong {
+  display:block;
+  font-family:var(--royalfont);
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.15em;
+  line-height:1.5;
+  color:#29476d;
+  text-shadow:0 1px 0 #fff, 0 1px 6px rgba(55,98,145,.12);
+}
+.attire-section .attire-columns strong::after {
+  content:'';
+  display:block;
+  width:72%;
+  max-width:125px;
+  height:1px;
+  margin:7px auto 0;
+  background:linear-gradient(90deg,transparent,#9cafc3,transparent);
+}
+.attire-section .attire-columns p {
+  font-family:var(--serif);
+  font-size:21px;
+  font-style:italic;
+  font-weight:500;
+  line-height:1.3;
+  color:#36557b;
+}
+.attire-section .attire-columns p.special {
+  font-family:var(--serif);
+  font-size:24px;
+  font-style:italic;
+  font-weight:700;
+  line-height:1.22;
+  color:#4075aa;
+  text-shadow:0 1px 1px rgba(255,255,255,.92), 0 2px 7px rgba(75,130,185,.16);
+}
+.attire-section .attire-columns small {color:#57708e}
+@media (max-width:680px) {
+  .attire-section .attire-columns {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:6px;
+  }
+  .attire-section .attire-columns strong {
+    font-size:clamp(8px,2.35vw,11px);
+    letter-spacing:.065em;
+    line-height:1.3;
+  }
+  .attire-section .attire-columns strong::after {
+    width:76%;
+    margin-top:5px;
+  }
+  .attire-section .attire-columns p {
+    font-size:clamp(15px,4vw,18px);
+    line-height:1.28;
+    margin-top:10px;
+  }
+  .attire-section .attire-columns p.special {
+    font-size:clamp(17px,4.4vw,20px);
+    font-weight:700;
+    line-height:1.25;
+  }
+  .attire-section .attire-columns small {
+    font-size:clamp(11px,2.8vw,13px);
+  }
+}
