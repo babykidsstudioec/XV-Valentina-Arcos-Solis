@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#071632">
+<title>Valentina · Mis XV años · Un cuento de hadas</title>
+<meta name="description" content="Acompáñame a vivir una noche de cuento de hadas. Los XV años de Valentina.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Valentina · Mis XV años ✨">
+<meta property="og:description" content="Un cuento de hadas está por comenzar. ¡Te espero!">
+<meta property="og:image" content="https://raw.githubusercontent.com/babykidsstudioec/XV-Valentina-Arcos-Solis/main/assets/img/preview-whatsapp.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#f1d28c;--cream:#fff2cc;--ink:#edf4ff;--night:#05132f;--serif:'Cormorant Garamond',Georgia,serif;--script:'Great Vibes',cursive;--title:'Playfair Display',Georgia,serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--night);color:var(--ink);font-family:var(--serif);overflow-x:hidden}body.lock{overflow:hidden}button,a{-webkit-tap-highlight-color:transparent}img{display:block;max-width:100%}[hidden]{display:none!important}
+#sparkles{position:fixed;inset:0;z-index:8;pointer-events:none}.spark{position:absolute;width:var(--size);height:var(--size);border-radius:50%;background:#fff5c3;box-shadow:0 0 11px 2px #a5cfff;opacity:0;animation:twinkle var(--dur) ease-in-out infinite;animation-delay:var(--delay)}
+@keyframes twinkle{0%,100%{opacity:.05;transform:scale(.5)}50%{opacity:.9;transform:scale(1.5)}}
+#music{position:fixed;top:calc(18px + env(safe-area-inset-top));right:17px;z-index:70;background:#10254ee9;border:1px solid var(--gold);border-radius:50%;width:48px;height:48px;color:var(--cream);font:26px var(--serif);cursor:pointer;box-shadow:0 0 20px #a2c6ff77}
+#opening{position:fixed;inset:0;z-index:100;background:radial-gradient(ellipse at center,#376297,#122750 48%,#02091c);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;perspective:1100px}
+.glow{position:absolute;width:95vmin;height:95vmin;background:#a8cfff1c;border-radius:50%;filter:blur(40px);animation:breathe 3.8s alternate infinite}
+@keyframes breathe{to{transform:scale(1.3);opacity:.3}}
+.book{position:relative;width:min(72vw,310px);height:min(108vw,458px);filter:drop-shadow(15px 15px 22px #000b);transform-style:preserve-3d}
+.book-back,.book-face,.book-page{position:absolute;inset:0;border-radius:7px 15px 15px 7px}
+.book-back{background:#172858;border:8px ridge #9e7935}
+.book-page{background:#f8efdc;color:#886322;display:grid;place-items:center;text-align:center;padding:25px;font:36px var(--script)}
+.book-face{transform-origin:left center;transform-style:preserve-3d;backface-visibility:hidden;background:radial-gradient(ellipse at center,#33588a,#0a2050 75%);border:7px ridge #ceab60;box-shadow:inset 0 0 20px #030716;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:16px;text-align:center;transition:transform 1.65s cubic-bezier(.2,.8,.3,1)}
+.book-face:before{content:'';position:absolute;inset:11px;border:1px solid #e8c37d;border-radius:4px;pointer-events:none}
+.crown{font-size:39px;color:var(--gold);margin-bottom:13px;text-shadow:0 0 17px #ffe2a6}
+.book-small{font:27px var(--script);color:#fff2d1}.book-title{font:clamp(41px,9vw,56px)/1.2 var(--script);margin:12px 0 22px;color:var(--cream);text-shadow:0 0 21px #e1c18c}.book-caption{font:14px var(--title);letter-spacing:3px;color:var(--gold);margin-bottom:24px}
+#start{width:76px;height:76px;border-radius:50%;border:3px double #fff2ce;box-shadow:0 0 0 5px #bc8d4c,0 0 25px #ebd8a5;background:linear-gradient(140deg,#fee5a2,#a56b32);font:46px var(--script);color:white;cursor:pointer}
+.book-hint{font:14px var(--serif);letter-spacing:.8px;margin-top:20px}.opening-hint{font:italic 20px var(--serif);color:#d7e4ff}
+#opening.open .book-face{transform:rotateY(-151deg)}#opening.open{animation:fadeOpening 1.7s 1s forwards}@keyframes fadeOpening{to{opacity:0;pointer-events:none;visibility:hidden}}
+.scene{min-height:100svh;position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:80px max(19px,4vw) 75px;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 50% 40%,#24518e 0%,#112955 50%,#06122c 85%)}.scene:after{content:'';position:absolute;inset:auto 0 0;height:115px;background:linear-gradient(transparent,#06122b);z-index:-1}.reveal{opacity:0;transform:translateY(30px);transition:opacity 1.1s ease,transform 1.1s ease}.reveal.show{opacity:1;transform:translateY(0)}
+.hero{justify-content:flex-end;padding-top:20px}.moon{position:absolute;top:7%;right:10%;width:min(31vw,180px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 25%,#fffce4,#b0c8eb);box-shadow:0 0 50px 11px #96bdf578;z-index:-1}
+.castle{position:absolute;right:-11%;top:2%;width:82%;height:56%;object-fit:contain;filter:drop-shadow(0 0 14px #a4cfff);opacity:.9;z-index:-1;animation:rise 8s ease-in-out infinite alternate}@keyframes rise{to{transform:translateY(-12px)}}
+.carriage{width:min(92vw,575px);height:49svh;object-fit:contain;filter:drop-shadow(0 0 30px #ebd18f82);animation:carriageEntrance 4.6s both,hover 6s 4.6s ease-in-out infinite}
+@keyframes carriageEntrance{from{transform:translateX(-125vw) scale(.8);opacity:0}to{transform:translateX(0) scale(1);opacity:1}}@keyframes hover{50%{transform:translateY(-15px)}}.butterfly{position:absolute;font-size:40px;filter:drop-shadow(0 0 16px #a8e6ff);animation:fly 6s ease-in-out infinite}.b1{top:20%;left:7%}.b2{top:57%;right:4%;animation-delay:-3s}@keyframes fly{25%{transform:translate(35px,-30px) rotate(-12deg)}50%{transform:translate(60px,15px) rotate(20deg)}75%{transform:translate(16px,35px) rotate(-10deg)}}
+.eyebrow{font:12px var(--title);letter-spacing:3px;color:#eedcae}.intro-script{font:clamp(35px,7vw,54px) var(--script);color:var(--gold);margin:5px}.hero h1{font:clamp(48px,11vw,99px) var(--title);font-weight:400;text-shadow:0 0 30px #6ca2ef;margin:0}.hero h1 b{color:var(--gold);font-size:1.16em}.swipe{font:19px var(--serif);margin-top:24px;animation:swipe 2s infinite}@keyframes swipe{50%{transform:translateY(8px)}}
+.ornament{font:44px var(--title);color:var(--gold)}.story p{font:clamp(27px,5.5vw,43px)/1.05 var(--serif);margin:8px auto}.story .name{font:clamp(86px,17vw,164px)/1.1 var(--script);font-weight:400;color:var(--gold);text-shadow:0 4px 0 #5c431c,0 0 25px #e1b97a91;margin:25px 0 5px}.story .surname{font:15px var(--title);letter-spacing:5px}.slipper{height:175px;width:70vw;object-fit:contain;filter:drop-shadow(0 0 24px #a9dafa);animation:hover 5s ease-in-out infinite}.story .poem{font:italic 29px var(--serif);color:#ebdab6;max-width:420px;margin-top:25px}
+.princess{justify-content:flex-end;min-height:109svh}.princess-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.62;mask-image:linear-gradient(to bottom,transparent 0%,black 20%,black 75%,transparent 100%);z-index:-1}.princess h2{font:clamp(49px,10vw,84px)/1 var(--title);font-weight:400;text-shadow:0 0 20px #000}.princess h2 em{display:block;font:clamp(86px,18vw,137px)/1 var(--script);font-weight:400;color:var(--gold)}.princess p{font:clamp(22px,5vw,31px) var(--serif);max-width:430px;text-shadow:0 0 19px #03091c}
+.tiny{font:14px var(--title);letter-spacing:4px;color:var(--gold);margin:0 0 22px}.calendar{display:flex;align-items:center;gap:19px;padding:10px 0;border-block:1px solid #d9b677}.calendar strong{font:clamp(110px,23vw,175px)/.95 var(--serif);font-weight:400;color:var(--gold)}.calendar div{text-align:left;font:clamp(31px,6vw,49px)/1.1 var(--serif);color:#f6e1b2}.calendar span{display:block}.calendar span:last-child{font-size:1.2em;color:white}.event h2{font:clamp(30px,6vw,51px) var(--title);font-weight:400;color:var(--gold);margin:19px 0 6px}.event .hour{font:clamp(38px,7vw,63px) var(--serif);margin:18px 0}.event .place{font:clamp(23px,5vw,31px) var(--serif);margin:7px 0}.event .how{font:19px var(--serif);max-width:350px;margin:12px auto 23px}.btn{border:1px solid #fff0be;border-radius:45px;background:linear-gradient(115deg,#f6e6b3,#bb8b3e,#f5dc93);color:#132b55;padding:15px 26px;font:700 20px var(--serif);display:inline-block;text-decoration:none;cursor:pointer;box-shadow:0 0 27px #d9bd7a59;transition:transform .2s}.btn:hover{transform:translateY(-4px)}
+.count-shoe{width:min(75vw,350px);max-height:295px;object-fit:contain;filter:drop-shadow(0 0 27px #a1daff);animation:hover 5s ease-in-out infinite}.timer{display:flex;gap:6px;align-items:center;margin-top:27px;width:min(100%,520px)}.timer div{flex:1;min-width:0;border:1px solid #eed9a966;border-radius:9px;background:#f9f6ef11;padding:10px 4px}.timer strong{display:block;font:clamp(27px,7vw,48px) var(--title);color:var(--gold)}.timer small{font:10px var(--title);letter-spacing:1px}.timer b{font:30px var(--serif);color:var(--gold)}.wish{font:italic 29px var(--serif);color:var(--cream);margin-top:34px}
+.program h2,.rsvp h2{font:clamp(43px,9vw,64px) var(--serif);font-weight:400;margin:18px auto}.program h2 em,.rsvp h2 em{display:block;font:clamp(69px,13vw,102px)/.85 var(--script);font-weight:400;color:var(--gold)}
+.timeline{position:relative;width:min(96vw,470px);margin-top:20px}.timeline:before{content:'';position:absolute;height:100%;width:1px;background:var(--gold);left:31%;opacity:.5}.timeline-item{display:grid;grid-template-columns:29% 25px 1fr;align-items:center;gap:10px;text-align:left;min-height:72px}.timeline-time{text-align:right;font:23px var(--serif);color:var(--gold)}.timeline-dot{width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 14px var(--gold);z-index:1}.timeline-event{font:clamp(20px,4vw,27px) var(--serif)}.dress{border:1px solid #d9b67778;padding:18px 24px;margin-top:35px;background:#d0e8ff0b}.dress small{font:13px var(--title);letter-spacing:2px;color:var(--gold)}.dress strong{display:block;font:38px var(--serif)}.dress p{font:18px var(--serif);margin:0}
+.mirror{width:min(70vw,340px);height:315px;object-fit:contain;filter:drop-shadow(0 0 22px #eed1a18a);animation:hover 6s ease-in-out infinite}.rsvp h2{margin:25px auto}.rsvp p{font:23px var(--serif);max-width:380px}.rsvp .note{font:15px var(--serif);color:#c6d7f3}.end{background:radial-gradient(ellipse at center,#284978,#07122b 78%)}.end .castle{height:85%;width:100%;right:0;top:10%;opacity:.25}.end h2{font:clamp(83px,15vw,146px)/1 var(--script);font-weight:400;color:var(--gold);text-shadow:0 0 25px #ffe2a477;margin:35px 0}.end p{font:clamp(29px,5vw,38px) var(--serif);margin:3px}.end .bye{font:clamp(70px,13vw,108px) var(--script);color:var(--cream)}.credits{position:absolute;bottom:23px;font:13px var(--serif);color:#d9e5f5a6}
+@media(min-width:780px){.castle{right:9%;width:57%}.princess-img{object-fit:contain}.scene{padding-inline:14vw}}@media(max-width:360px){.scene{padding-inline:12px}.timer{gap:3px}.timer small{font-size:8px}.timer b{font-size:23px}.calendar{gap:9px}.story .name{font-size:76px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body class="lock">
+<div id="sparkles" aria-hidden="true"></div>
+<button id="music" title="Música" aria-label="Activar o pausar música">♫</button>
+<audio id="audio" loop preload="none"></audio>
+<div id="opening">
+ <div class="glow" aria-hidden="true"></div>
+ <div class="book">
+  <div class="book-back"></div>
+  <div class="book-page">Una noche mágica está por comenzar...</div>
+  <div class="book-face"><div class="crown">♛</div><div class="book-small">Érase una vez...</div><div class="book-title">Un cuento de hadas</div><div class="book-caption">MIS XV AÑOS</div><button id="start" aria-label="Abrir invitación">V</button><div class="book-hint">Toca la V para comenzar</div></div>
+ </div><div class="opening-hint">Una invitación hecha con magia</div>
+</div>
+<main>
+ <section class="scene hero" id="inicio">
+  <div class="moon"></div><img class="castle" id="castle1" alt="" aria-hidden="true">
+  <div class="butterfly b1" aria-hidden="true">🦋</div><div class="butterfly b2" aria-hidden="true">🦋</div>
+  <img class="carriage" id="carriage" alt="Carroza de cristal encantada">
+  <div class="reveal"><div class="eyebrow">BABYKIDS STUDIO PRESENTA</div><p class="intro-script">Una historia escrita con estrellas</p><h1>Mis <b>XV</b> años</h1><div class="swipe">Desliza para descubrir la magia ⌄</div></div>
+ </section>
+ <section class="scene story" id="historia">
+  <div class="ornament reveal">❦</div><p class="reveal">Hace quince años nació</p><p class="reveal">una hermosa princesa llamada</p>
+  <h2 class="name reveal">Valentina</h2><div class="surname reveal">ARCOS SOLÍS</div><img class="slipper reveal" id="slipper" alt="Zapatilla de cristal">
+  <p class="poem reveal">Y hoy comienza un nuevo capítulo de su historia.</p>
+ </section>
+ <section class="scene princess"><img class="princess-img" id="princess" alt="Escena de cuento de hadas"><div class="reveal"><h2>Una noche <em>mágica</em></h2><p>Entre luces, sueños y estrellas, quiero compartir contigo un momento que guardaré para siempre.</p></div></section>
+ <section class="scene event" id="fecha">
+  <p class="tiny reveal">EL GRAN BAILE SERÁ</p>
+  <div class="calendar reveal"><strong>30</strong><div><span>ENERO</span><span>2027</span></div></div>
+  <p class="hour reveal">8:00 PM</p><div class="ornament reveal">❦</div>
+  <h2 class="reveal">Salón Turquesa II</h2><p class="place reveal">Mall del Sol · Guayaquil</p><p class="how reveal">Subir por los estacionamientos del restaurante Portela.</p>
+  <a class="btn reveal" href="https://www.google.com/maps/search/?api=1&query=Mall+del+Sol+Guayaquil+Ecuador" target="_blank" rel="noopener noreferrer">⌖ &nbsp; Ver ubicación</a>
+ </section>
+ <section class="scene count">
+  <p class="tiny reveal">LA MAGIA COMIENZA EN</p><img class="count-shoe reveal" id="shoe" alt="Zapatilla de cristal">
+  <div class="timer reveal"><div><strong id="days">00</strong><small>DÍAS</small></div><b>:</b><div><strong id="hours">00</strong><small>HORAS</small></div><b>:</b><div><strong id="minutes">00</strong><small>MIN</small></div><b>:</b><div><strong id="seconds">00</strong><small>SEG</small></div></div>
+  <p class="wish reveal">Cuando el reloj marque la hora...<br>nuestro cuento comenzará.</p>
+ </section>
+ <section class="scene program">
+  <div class="ornament reveal">❦</div><h2 class="reveal">Nuestra noche <em>encantada</em></h2>
+  <div class="timeline" id="timeline"></div>
+  <div class="dress reveal"><small>✦ CÓDIGO DE VESTIMENTA ✦</small><strong>Formal</strong><p>El color celeste está reservado para la quinceañera.</p></div>
+ </section>
+ <section class="scene rsvp" id="confirmacion">
+  <p class="tiny reveal">TU PRESENCIA ES UN REGALO</p><img class="mirror reveal" id="mirror" alt="Espejo encantado de cristal">
+  <h2 class="reveal">¿Nos acompañas <em>en este sueño?</em></h2>
+  <p class="reveal">Será un honor compartir esta noche inolvidable contigo.</p>
+  <a class="btn reveal" href="https://babykidsstudioec.github.io/XV-Valentina-Arcos-Solis/" target="_blank" rel="noopener noreferrer">♡ &nbsp; Confirmar asistencia</a>
+  <p class="note reveal">La confirmación se realiza en la invitación original para conservar la lista de invitados.</p>
+ </section>
+ <section class="scene end">
+  <img class="castle" id="castle2" alt="" aria-hidden="true">
+  <div class="reveal"><p>Los cuentos más hermosos</p><p>se viven con personas especiales.</p><h2>¡Te esperamos!</h2><p>Con cariño,</p><div class="bye">Valentina</div></div>
+  <p class="credits">BabyKids Studio Fotográfico · Invitaciones Digitales</p>
+ </section>
+</main>
+<script>
+(function(){
+"use strict";
+var base="https://raw.githubusercontent.com/babykidsstudioec/XV-Valentina-Arcos-Solis/main/assets/";
+var pictures={castle1:"img/palacio.svg",castle2:"img/palacio.svg",carriage:"img/carroza-cristal-3d.webp",slipper:"img/zapatilla-final-3d.webp",princess:"img/escena-valentina.jpg",shoe:"img/zapatilla-cuenta-3d.webp",mirror:"img/espejo-cristal-confirmacion.webp"};
+Object.keys(pictures).forEach(function(id){document.getElementById(id).src=base+pictures[id]});
+var music=document.getElementById("audio"),musicBtn=document.getElementById("music");
+music.src=base+"audio/musica-valentina-completa.mp3";
+function soundLabel(){musicBtn.textContent=music.paused?"♫":"❚❚"}
+musicBtn.addEventListener("click",function(){if(music.paused){music.play().catch(function(){})}else music.pause();soundLabel()});
+music.addEventListener("play",soundLabel);music.addEventListener("pause",soundLabel);
+music.addEventListener("error",function(){musicBtn.style.display="none"});
+for(var i=0;i<55;i++){var s=document.createElement("span");s.className="spark";s.style.left=(i*67.13%100)+"%";s.style.top=(i*37.21%100)+"%";s.style.setProperty("--size",(i%4+1)+"px");s.style.setProperty("--dur",(2+i%5)+"s");s.style.setProperty("--delay",(i*.37%9)+"s");document.getElementById("sparkles").appendChild(s)}
+var observer=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("show");observer.unobserve(e.target)}})},{threshold:.08,rootMargin:"0px 0px -7% 0px"});
+var schedule=[["8:00 PM","Recepción de invitados"],["8:30 PM","Entrada de la quinceañera"],["9:00 PM","Vals y brindis"],["9:30 PM","Cena"],["10:30 PM","¡A bailar!"]];
+schedule.forEach(function(item){var row=document.createElement("div");row.className="timeline-item reveal";var t=document.createElement("span");t.className="timeline-time";t.textContent=item[0];var dot=document.createElement("i");dot.className="timeline-dot";var label=document.createElement("span");label.className="timeline-event";label.textContent=item[1];row.append(t,dot,label);document.getElementById("timeline").appendChild(row)});
+document.querySelectorAll(".reveal").forEach(function(el){observer.observe(el)});
+var target=new Date("2027-01-30T20:00:00-05:00").getTime();
+function countdown(){var diff=Math.max(0,target-Date.now()),values={days:Math.floor(diff/86400000),hours:Math.floor(diff/3600000)%24,minutes:Math.floor(diff/60000)%60,seconds:Math.floor(diff/1000)%60};Object.keys(values).forEach(function(k){document.getElementById(k).textContent=String(values[k]).padStart(2,"0")});if(diff===0)document.querySelector(".wish").textContent="¡Llegó el día de nuestro cuento de hadas!"}
+countdown();setInterval(countdown,1000);
+document.getElementById("start").addEventListener("click",function(){var opening=document.getElementById("opening");if(opening.classList.contains("open"))return;opening.classList.add("open");this.disabled=true;music.play().catch(function(){});setTimeout(function(){opening.hidden=true;document.body.classList.remove("lock");window.scrollTo(0,0)},1950)});
+})();
+</script>
+</body>
+</html>
